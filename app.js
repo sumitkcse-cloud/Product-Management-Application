@@ -1,12 +1,13 @@
 const express = require('express');
 const app = express();
 
-app.get('/', (req,res)=>{
+app.get('/get-employees', (req,res)=>{
     res.json({
-        message: "Data Retrieved"
+        message: "Employees Data Retrieved"
     })
 })
 
+const port =4000;
 app.listen(4001, ()=>{
     console.log("Server is running")
 })
